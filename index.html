@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <div class="container-xl">
+    <div class="row ">
+      
+      <div class="col-xl-6 flex-column pt-5 ">
+        
+        <h2 class="">BUDGET APP PLANE</h2>
+        <form class="js-user-form-pound mt-5 mb-5" action="">
+          <label class="fw-bold text-success fs-4" for="user-cost">Please Enter Your Budget<input class="js-input-user-cost mt-2 mb-2 d-block rounded" type="number" id="user-cost" name="user-cost"></label>
+          
+          <button class="js-calculate-btn d-block btn btn-success mt-4">Calculate</button>
+        </form>
+        
+        
+        <form class="js-user-form mt-5" action="">
+          <label class="fw-bold fs-4 text-info" for="user-cost-name">Please Enter Your Expense<input class="js-input-user-cost-name mt-2 d-block rounded" id="user-cost-name" type="text"></label>
+          <label class="fw-bold fs-4 text-info d-block mt-5" for="user-cost-spend">Please Enter Expense Amount
+            <input class="js-input-user-cost-spend mt-2 d-block rounded" id="user-cost-spend" type="text"></label>
+            <button class=" js-add-btn btn btn-danger mt-4">Add Expens</button>
+          </form>
+          
+        </div>
+        
+        <div class="col-6 mt-5 d-flex gap-5">
+          <ul class="js-budget-list mt-3 list-unstyled ">
+            <li class="d-flex flex-column align-items-center">
+              <h3 class="text-primary fw-bold">BUDGET</h3>
+              <span class="user-budget text-center">🪙</span>
+              <ins class="fs-3 text-cost fw-bold text-success pt-2">0$</ins>
+            </li>
+            
+            <li class="pt-5">
+              <h4>Expense Title</h4>
+              <p></p>
+            </li>
+          </ul>
+          
+          <ul class="js-expenses-list mt-3 list-unstyled ms-5">
+            <li class="d-flex flex-column align-items-center">
+              <h3 class="text-primary fw-bold">EXPENSES</h3>
+              <span class="user-budget text-center">💳</span>
+              <ins class="fs-3 text-expens fw-bold text-success pt-2">0$</ins>
+            </li>
+
+            <li class="pt-5 expense-item">
+              <h4>Expense Value</h4>
+              <p class="expense-text"></p>
+            </li>
+          </ul>
+          
+          <ul class="js-balance-list mt-3 list-unstyled ms-5 ">
+            <li class="d-flex flex-column align-items-center">
+              <h3 class="text-primary fw-bold">BALANCE</h3>
+              <span class="user-budget d-block">💰</span>
+              <ins class="fs-3 fw-bold text-success text-balance pt-2">0$</ins>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    <script src="./js/utils.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+  </html>
