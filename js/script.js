@@ -45,7 +45,7 @@ let orderList = () =>{
   let inputNameVaule = elFormInputName.value.trim();
   let elBtnDelet = createElement("button","",elExpensItim)
   elBtnDelet.dataset.BtnDelet = inputNameVaule.id
-  elBtnDelet.textContent = "fiolskfs"
+  elBtnDelet.textContent = "Delet"
   
   
   $(".expense-text",elExpensItim).textContent = inputNameVaule
